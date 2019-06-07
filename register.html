@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="register.css" rel="stylesheet">
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+</head>
+<body>
+
+<div id="main">
+    <form method="get" action="register.php">
+        <div class="main_border">
+
+            <div class="text_up">
+                <span>Регистрация</span>
+            </div>
+
+            <hr width="300px" size="2px">
+
+            <div class="email">
+                <span>Email</span> <input type="email" name="email_php" class="input_email">
+            </div>
+
+            <div id="password">
+                <span>Password</span> <input type="password" name="password_php" id="input_password">
+            </div>
+
+            <div id="second_password">
+                <span>Submit Password</span> <input type="password" name="second_password_php" id="input_second_password">
+            </div>
+
+            <div class="enter">
+                <input type="submit" value="Зарегистрироваться" id="enter_b">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script>
+
+    window.addEventListener("load",function(){
+        document.getElementById("enter_b").addEventListener("click",function(){
+            var inp1 = document.getElementById("input_password"), inp2 = document.getElementById("input_second_password");
+            if(inp1.value!=inp2.value){
+                inp1.value = "";
+                inp2.value = "";
+                alert("Пароли не совпадают");
+                return;
+            }
+            alert("Спасибо за регистрацию");
+        });
+    })
+
+
+    /*
+    $(window).load(function () {
+        $("#enter_b").click(function () {
+            var i1 = $("#input_password"), i2 = $("#input_second_password");
+            if (i1.value != i2.value){
+                input_password.value = "";
+                input_second_password.value = "";
+                alert("Пароли не совпадают");
+                return;
+            } else {
+                alert("Спасибо за регистрацию");
+            }
+        })
+    });
+    */
+
+</script>
+
+</body>
+</html>

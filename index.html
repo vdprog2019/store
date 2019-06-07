@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+</head>
+<body>
+    <div id="main">
+        <form method="post" action="login_script.php">
+           <div class="main_border">
+                <div class="text_up">
+                    <span>Войти в личный кабинет</span>
+                </div>
+                <hr width="300px" size="2px">
+
+                <div class="login">
+                    <span>Логин</span>&nbsp;<input class="border_login" name="login_php">
+                    <div id="border_login_alt">Ваш логин</div>
+                </div>
+
+                <div class="password">
+                   <span>Пароль</span>&nbsp;<input type="password" class="border_password" name="password_php">
+                </div>
+
+               <br>
+
+               <div onclick="document.location = 'forgotPassword.html '">
+                   <span class="q">Забыли пароль?</span>
+               </div>
+
+
+
+               <div class="enter">
+                   <input type="submit" value="Войти" class="enter_b">
+               </div>
+
+               <div class="reg" onclick="document.location = ' register.html '">
+                   <span>Зарегистрироваться</span>
+               </div>
+
+           </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
