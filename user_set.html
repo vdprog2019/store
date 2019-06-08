@@ -27,11 +27,12 @@
 <script>
     $("#exit_div").click(function () {
 
-        history.pushState(null, null, location.href = 'http://localhost:63342/store-master/index.html?_ijt=bskc2u5ia8quria6taufc3fb8n');
+        history.pushState(null, null, location.href = 'index.html');
         window.onpopstate = function(event) {
             history.go(1);
         };
     });
+
 
 </script>
 
