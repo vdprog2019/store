@@ -12,12 +12,15 @@ echo "<table>
 if(!empty($_POST["login_php"]) && !empty($_POST["password_php"])){
     $l = $_POST["login_php"];
     $p = $_POST["password_php"];
-   //$tmp = $ciphertext = openssl_encrypt("VLAD", 'AES-256-CTR', "777", true); // OpenSSL
+    //$tmp = $ciphertext = openssl_encrypt("VLAD", 'AES-256-CTR', "777", true); // OpenSSL
 
     //echo $tmp;
     if (filter_var($l, FILTER_VALIDATE_URL, FILTER_VALIDATE_FLOAT) === true) {
         die('Not a valid');
     } else {
+
+
+        header('Location: http://localhost:63342/store-master/user_set.html?_ijt=ev1op6ka4c9l8pln83da90d8v3');
         echo "<table>
     <tr><td>Логин</td><td>$l</td></tr> 
 </table>
@@ -31,6 +34,8 @@ if(!empty($_POST["login_php"]) && !empty($_POST["password_php"])){
 ";
 }
 else die("NOT FOUND!");
+
+
 
 
 /*

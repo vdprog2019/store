@@ -1,0 +1,83 @@
+@keyframes flow {
+
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+header{
+    align-content: center;
+    margin-left: 150px;
+    z-index: 1;
+}
+.inline
+{
+    z-index: 1;
+    /*font-family: Gabriola;*/
+    font-family: "Droid Sans";
+    font-size: 22px;
+    font-weight: bold;
+    color: bisque;
+    text-align: -webkit-center;
+    height: 30px;
+    display: inline-block;
+    background: red;
+    width: 30%;
+    vertical-align: center;
+    border-radius: 8px;
+}
+.inline:hover{
+    padding-top: 10px;
+    text-align: center;
+    height: 45px;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+
+
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+
+
+#exit_div.inline{
+    background-color: dimgrey;
+    width: 25px;
+    height: 25px;
+}
+#exit_div.inline:hover{
+    animation: none;
+    background: dimgrey;
+    background-size: auto;
+    padding-top: 0px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen
+and (max-width: 600px){
+    header{
+        margin-left: 20px;
+    }
+}

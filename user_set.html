@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <title>LOGIN</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link href="user_set.css" rel="stylesheet">
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+    <link rel="stylesheet" href="user_settings_style.css">
 </head>
 <body>
-   <header>
-       <div id="main_menu_div">
-            <div  class="inline">АККАУНТ</div> <div  class="inline">ПОКУПКИ</div> <div  class="inline">КОРЗИНА</div>
-       </div>
-   </header>
+
+
+<header>
+    <div id="main_menu_div">
+        <div  class="inline">АККАУНТ</div>
+        <div  class="inline">ПОКУПКИ</div>
+        <div  class="inline">КОРЗИНА</div>
+        <div id="exit_div" class="inline"> Х </div>
+    </div>
+
+
+
+</header>
+
+
+
+<script>
+    $("#exit_div").click(function () {
+
+        history.pushState(null, null, location.href = 'http://localhost:63342/store-master/index.html?_ijt=bskc2u5ia8quria6taufc3fb8n');
+        window.onpopstate = function(event) {
+            history.go(1);
+        };
+    });
+
+</script>
+
 
 
 
