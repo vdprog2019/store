@@ -5,22 +5,171 @@
     <title>LOGIN</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-    <link rel="stylesheet" href="user_settings_style.css">
+    <link href="user_settings_style.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+
 </head>
 <body>
 
 
 <header>
+
     <div id="main_menu_div">
         <div  class="inline">АККАУНТ</div>
         <div  class="inline">ПОКУПКИ</div>
         <div  class="inline">КОРЗИНА</div>
-        <div id="exit_div" class="inline"> Х </div>
+        <div id="exit_div" class="inline"> Login </div>
     </div>
 
-
-
 </header>
+
+
+<hr id="line" width="900px" size="2px">
+
+
+<div id="menu">
+    <ul class="menu_items">
+        <li id="item1" class="items">Бренды</li>
+        <li id="item2" class="items">Мужские часы</li>
+        <li id="item3" class="items">Женские часы</li>
+        <li id="item4" class="items">Аксессуары</li>
+        <li id="item5" class="items">Скидки</li>
+    </ul>
+</div>
+
+
+
+
+
+<ul id="slides">
+    <li class="slide showing"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+</ul>
+
+
+
+
+
+<div class="brends">
+    <ul class="brends_list">
+        <li id="brend1" class="brends_pic"></li>
+        <li id="brend2" class="brends_pic"></li>
+        <li id="brend3" class="brends_pic"></li>
+        <li id="brend4" class="brends_pic"></li>
+        <li id="brend5" class="brends_pic"></li>
+        <li id="brend6" class="brends_pic"></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+<div id="pic_div">
+
+    <img id="big_pic_1" src="http://desktopwallpapers.org.ua/large/201410/36241.jpg">
+    <img id="big_pic_2" src="https://pw.artfile.me/wallpaper/16-03-2017/650x407/brendy---drugoe-naruchnye-chasy-serebro--1141513.jpg">
+</div>
+
+<div class="space"></div>
+
+<div>
+    <span id="span_1">МАГАЗИН ЧАСОВ №1 В УКРАИНЕ</span>
+    <br>
+    <br>
+    <span>
+        Часы как инструмент определения времени давно и надёжно прижились в человеческой реальности. Романтики и прагматики, художники и бизнесмены, мужчины и женщины, взрослые и дети – все хотят знать время в нужный момент. Сколько минут прошло, сколько осталось, а ещё – какие именно модели и какого бренда блистают на руке у друга, возлюбленной или конкурента. С древних времён, когда человек догадался воткнуть в землю палочку и другой палочкой принялся отмерять равные промежутки времени на песке, не утихают споры – какими должны быть часы? Наручными, или настольными, или настенными, или, наконец, напольными? Почему же каждый бриллиантик на безеле или шестерёнка в механизме неизменно заставляют горделиво выпятиться нижнюю губу обладателя аксессуара, а щеки – раздуться? На самом деле именно это - главные вопросы при выборе часов, а не то, сколько кругов совершила та или иная стрелка и сколько точно засечек или накладных индексов она при этом пересекла.
+    </span>
+</div>
+
+<div class="space"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <ul>
+        <li>
+            <p class="home">Home</p>
+            <a class="logo" href="#">Your Clock<i>&copy; 2019</i></a>
+        </li>
+        <li>
+            <p class="services">Services</p>
+
+            <ul>
+                <li><a href="#">3D modeling</a></li>
+                <li><a href="#">Web development</a></li>
+                <li><a href="#">Mobile development</a></li>
+                <li><a href="#">Web &amp; Print Design</a></li>
+            </ul>
+        </li>
+        <li>
+            <p class="reachus">Reach us</p>
+
+            <ul>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li>555-123456789</li>
+            </ul>
+        </li>
+        <li>
+            <p class="clients">Clients</p>
+
+            <ul>
+                <li><a href="#">Login Area</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide,4000);
+
+    function nextSlide(){
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide showing';
+    }
+</script>
+
+
+
 
 
 
